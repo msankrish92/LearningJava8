@@ -18,10 +18,17 @@ public class StreamsExample {
 		Map<String,List<String>> studentMap = StudentDataBase.getAllStudents().parallelStream()
 				.peek((student -> {
 					System.out.println(student);
+					
 				}))
 				.filter(studentPredicate)// Stream of students
+				.peek((student -> {
+					System.out.println("after first filter"+student);
+				}))
 				.filter(studentGpaPredicate)// Stream of students
-			.collect(Collectors.toMap(Student::getName, Student::getActivities));// Gives us the desired output
+				.peek((student -> {
+					System.out.println("after second filter"+student);
+				}))
+				.collect(Collectors.toMap(Student::getName, Student::getActivities));// Gives us the desired output
 
 		System.out.println(studentMap);
 		
