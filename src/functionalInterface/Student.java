@@ -64,6 +64,7 @@ public Student(String s) {
 	}
 
 	List<String> activities = new ArrayList<>();
+	
 
 	public List<String> getActivities() {
 		return activities;

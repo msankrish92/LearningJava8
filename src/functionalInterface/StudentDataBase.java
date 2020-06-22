@@ -20,7 +20,7 @@ public class StudentDataBase {
 		Student student3 = new Student("Mohan", 3, 10.0, "male", Arrays.asList("FootBall", "Cricket", "swimming"));
 		Student student4 = new Student("Jeni", 3, 2.6, "female", Arrays.asList("FootBall", "gymnastics", "volleyBall"));
 
-		Student student5 = new Student("kanchana", 4, 9.6, "female",Arrays.asList("FootBall", "Athletics", "volleyBall"));
+		Student student5 = new Student("Kanchana", 4, 9.6, "female",Arrays.asList("FootBall", "Athletics", "volleyBall"));
 		Student student6 = new Student("Visu", 4, 8.6, "female", Arrays.asList("FootBall", "soccer", "volleyBall"));
 
 		List<Student> students = Arrays.asList(student1, student2, student3, student4, student5, student6);
